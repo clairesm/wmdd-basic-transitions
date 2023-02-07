@@ -1,0 +1,303 @@
+body {
+    line-height: 1.5;
+    max-width: 1400px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.wrapper {
+    margin: 1rem 2%;
+}
+
+main {
+    display: flex;
+    gap: 1rem;
+    flex-flow: column nowrap;
+}
+
+.primary-div {
+    border: 1px solid black;
+    padding: 1rem;   
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: nowrap;
+    gap: .3rem;
+}
+
+li {
+    list-style-type: none;
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    background-color: black;
+    text-align: center;
+}
+
+li a {
+    
+    text-decoration: none;
+    display: block;
+    padding: .5rem 1rem;
+    align-items: center;
+}
+
+li i {
+    color: white;
+    text-align: center;
+    display: block;
+    font-size: 1.5rem;
+}
+
+a span {
+    color: white;
+    display: block;
+    
+}
+
+.title {
+    grid-column: 1/-1;
+    text-align: center;
+    margin: 0;
+    font-size: 1rem;
+    font-weight: bold;
+    display: block;
+    padding-bottom: 1rem;
+}
+
+.div-07 ul, .div-08 ul, .div-09 ul {
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.div-07 li, .div-08 li, .div-09 li {
+    justify-content: flex-start;
+}
+
+.div-01 li:hover {
+    background-color: red;
+    transition: .5s;
+}
+
+
+.div-02 li:hover i,
+.div-02 li:hover span {
+    color: red;
+    transition: .5s;
+}
+
+.div-03 li:hover i  {
+    color: red;
+    transition: .5s;
+}
+
+.div-04 li:hover  {
+    box-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+    transition: .5s;
+}
+
+.div-05 ul, 
+.div-06 ul {
+    overflow: hidden;
+}
+
+.div-05 li, 
+.div-06 li {
+    transition: border-bottom .5s;
+    transform: all .5s;
+    border-bottom: 5px solid transparent;
+    overflow: hidden;
+}
+
+.div-05 a, 
+.div-06 a {
+    margin-bottom: -5px;
+}
+
+
+.div-05 li:hover,
+.div-06 li:nth-child(2):hover  {
+    border-bottom: 5px solid hotpink;
+    
+}
+
+
+.div-06  li:nth-child(1):hover {
+    border-bottom: 5px solid orange;
+}
+
+.div-06  li:nth-child(3):hover {
+    border-bottom: 5px solid yellow;
+}
+
+.div-06  li:nth-child(4):hover {
+    border-bottom: 5px solid violet;
+}
+
+.div-07 a:hover i,
+.div-07 a:hover span {
+    color: black;
+    transition: .5s;
+}
+
+.div-07 a:hover, 
+.div-07 li:hover {
+    background-color: hotpink;
+    transition: .5s; 
+    cursor: pointer;
+}
+
+.div-08 li:hover i,
+.div-08 li:hover span {
+    color: black;
+    transition-delay: .25s;
+}
+
+/* .div-08 a:hover, */
+.div-08 li:hover {
+    background-color: yellow;
+    transition: .5s; 
+    cursor: pointer;
+}
+
+.div-09 li {
+    width: 100%;
+    justify-content: flex-start;
+}
+
+.div-09 a   {
+    color: white;
+    background-color: orange;
+    width: 40px;
+    transition: width .5s;
+    padding: .6rem 1rem;
+}
+
+.div-09 i,
+.div-09 span {
+    display: flex;
+}
+
+.div-09 i {
+    margin-left: .7rem;
+}
+
+.div-09 li:hover a {
+    width: 100%;
+    justify-content: flex-start;
+}
+
+.div-10 i {
+    transition: .5s;
+}
+
+.div-10 li:hover i {
+    transform: rotate(360deg);
+    
+}
+
+.div-11 i {
+    transition: .5s;
+}
+
+.div-11 li:hover i {
+    transform: rotateY(360deg);
+}
+
+.div-12 i {
+    transition: .5s;
+}
+
+.div-12 li:hover i {
+    transform: rotateX(360deg);
+    transition: .5s;
+}
+
+.div-13 form {
+    display: flex;
+    justify-content: center;
+}
+
+.div-13 input {
+    display: flex;
+    width: 200px;
+    justify-content: center;
+
+    -webkit-transition: all .2s ease-out;
+    -moz-transition: all .2s ease-out;
+    -ms-transition: all .2s ease-out;
+    -o-transition: all .2s ease-out;
+    transition: all .2s ease-out
+    
+}
+
+.div-13 button {
+    background: none;
+    border: none;
+}
+
+.div-13 i {
+    font-size: 1.5rem;
+    color: black;
+}
+
+.div-13 input:active {
+    outline: 2px solid orange;
+    border: 2px solid orange;
+}
+
+.div-13 input:focus {
+    outline: 2px solid orange;
+    border: 2px solid orange;
+    width: 100%;
+}
+
+@media screen and (min-width: 800px) {
+    main {
+        flex-flow: row wrap;
+    }
+    .primary-div {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        flex-basis: 25%;
+    }
+
+    .title {
+        flex-grow: 1;
+    }
+
+}
+
+@media screen and (min-width: 1082px) {
+    .primary-div {
+        flex-basis: 26%;
+    }
+}
+
+@media screen and (min-width: 1084px) {
+    .primary-div {
+        flex-basis: 27%;
+    }
+}
+
+@media screen and (min-width: 1111px) {
+    .primary-div {
+        flex-basis: 28%;
+    }
+}
+
+@media screen and (min-width: 1126px) {
+    .primary-div {
+        flex-basis: 29%;
+    }
+}
+
